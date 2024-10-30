@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vong Lap (LOOP)</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <div class="containermy-20">
+      <h3 class="text-center text-red-500 text-4xl font-medium mb-10">
+        Bài tập in số chẵn/lẻ từ 0->100
+      </h3>
+
+      <div class="max-w-sm mx-auto">
+        <button
+          type="submit"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          onclick="inSoChanLe()"
+        >
+          IN
+        </button>
+        <div id="result"></div>
+      </div>
+    </div>
+    <div class="container my-20">
+      <h3 class="text-center text-red-500 text-4xl font-medium mb-10">
+        Tính tổng các số chẵn từ 1 đến N
+      </h3>
+
+      <div class="max-w-sm mx-auto">
+        <input
+          type="email"
+          id="number"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+          placeholder="Nhập một số nguyên"
+          required
+        />
+        <button
+          type="submit"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          onclick="tonhTongChan()"
+        >
+          Tính Tổng các số chẵn
+        </button>
+        <div id="result2"></div>
+      </div>
+    </div>
+    <div class="container my-20">
+      <h3 class="text-center text-red-500 text-4xl font-medium mb-10">
+        Số chia hết cho 3 từ 0-1000
+      </h3>
+
+      <div class="max-w-sm mx-auto">
+        <button
+          type="submit"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          onclick="soChiaHetCho3()"
+        >
+          Tổng các số chia hết cho 3
+        </button>
+        <div id="result3"></div>
+      </div>
+    </div>
+    <div class="container my-20">
+      <h3 class="text-center text-red-500 text-4xl font-medium mb-10">
+        Tạo 10 thẻ div
+      </h3>
+
+      <div class="max-w-sm mx-auto">
+        <button
+          type="submit"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          onclick="taoTheDiv()"
+        >
+          Tạo thẻ div
+        </button>
+        <div id="theDiv" class="mt-5"></div>
+      </div>
+    </div>
+    <script src="./Js/main.js"></script>
+  </body>
+</html>
